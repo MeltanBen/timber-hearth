@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ASA",
+    "AAA"
+  ],
+  "key": {
+    "S": {
+      "item": "timber_hearth:marshmallow"
+    },
+    "A": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "timber_hearth:marshmallow_jar",
+    "count": 1
+  }
+}

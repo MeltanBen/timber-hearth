@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "timber_hearth:block/marshmallow_jar" },
+    "facing=east": { "model": "timber_hearth:block/marshmallow_jar", "y": 90 },
+    "facing=south": { "model": "timber_hearth:block/marshmallow_jar", "y": 180 },
+    "facing=west": { "model": "timber_hearth:block/marshmallow_jar", "y": 270 }
+  }
+}

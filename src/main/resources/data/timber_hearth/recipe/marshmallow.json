@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "id": "timber_hearth:marshmallow",
+    "count": 1
+  }
+}
