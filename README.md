@@ -6,6 +6,7 @@
 
 - Minecraft 1.21.1（暂时只有这个版本）
 - Fabric Loader 0.19.5+
+- Fabric API 0.116.17+1.21.1
 - Java 21
 
 ## 添加的内容
@@ -23,7 +24,7 @@
 ## 安装
 
 1. 下载mc1.21.1
-2. 下载fabric
+2. 下载fabric和对应API
 3. 把模组 jar 放进 `.minecraft/mods/` 文件夹
 
 ## 构建
