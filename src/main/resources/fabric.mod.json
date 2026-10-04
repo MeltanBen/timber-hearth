@@ -3,16 +3,16 @@
 	"id": "timber_hearth",
 	"version": "${version}",
 	"name": "Timber Hearth",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod for OuterWilds (Fabric)",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MeltanBen/timber-hearth"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/timber-hearth/icon.png",
+	"icon": "assets/timber_hearth/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
