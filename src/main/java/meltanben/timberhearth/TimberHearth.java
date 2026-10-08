@@ -39,7 +39,7 @@ public class TimberHearth implements ModInitializer {
 				context -> context.getBiomeKey().equals(Biomes.LUSH_CAVES),
 				MobCategory.AXOLOTLS,
 				ModEntityType.HEARTHIAN,
-				20,
+				10,
 				1,
 				4
 		);

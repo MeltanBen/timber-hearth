@@ -6,12 +6,16 @@ import meltanben.timberhearth.entitys.ModEntityType;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.level.material.Fluids;
 
 import java.util.function.Function;
 
@@ -29,6 +33,14 @@ public class ModItems {
     );
     public static final Item HEARTHIAN_SPAWN_EGG = register(//哈斯刷怪蛋
             new SpawnEggItem(ModEntityType.HEARTHIAN, 11590137, 9021404, new Item.Properties()),"hearthian_spawn_egg"
+    );
+    public static final Item HEARTHIAN_BUCKET = register(
+            new MobBucketItem(
+                    ModEntityType.HEARTHIAN,
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_AXOLOTL,
+                    new Item.Properties().stacksTo(1).component(DataComponents.BUCKET_ENTITY_DATA, CustomData.EMPTY)
+            ),"hearthian_bucket"
     );
 
     //加入模组物品标签
@@ -51,6 +63,7 @@ public class ModItems {
     }
 
 
+
     public static void initialize() {
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
@@ -60,6 +73,7 @@ public class ModItems {
             itemGroup.accept(ModItems.MARSHMALLOW_SHOOTER);
             itemGroup.accept(ModItems.HEARTHIAN_SPAWN_EGG);
             itemGroup.accept(ModBlocks.MARSHMALLOW_JAR);
+            itemGroup.accept(ModItems.HEARTHIAN_BUCKET);
         });
 
     }
